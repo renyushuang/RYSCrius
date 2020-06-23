@@ -7,11 +7,15 @@ cmake_minimum_required(VERSION 3.4.1)
 #
 # 这个命令不是强制性的，但最好都加上。它会引入两个变量 demo_BINARY_DIR 和 demo_SOURCE_DIR，
 # 同时，cmake 自动定义了两个等价的变量 PROJECT_BINARY_DIR 和 PROJECT_SOURCE_DIR
-project(helloJniLib)
+#project(helloJniLib)
 
 ## 3.生成动态库
-#add_library(helloJniLib SHARED
-#            com_renyushuang_ryscrius_JniHelloWord.c)
+add_library(helloJniLib SHARED
+        com_renyushuang_ryscrius_JniHelloWord.c)
+
+add_library(NativeCodeCallJavaMethod SHARED
+        com_renyushuang_ryscrius_CallJavaMethodFromNativeCode.c)
+
 # 3.1.add_library 默认生成是静态库，通过以上命令生成文件名字，
 #
 # 在 Linux 下是：
@@ -31,8 +35,8 @@ project(helloJniLib)
 #add_library(helloJniLib SHARED ${SRC_LIST})
 
 # 3.4 自定义搜索规则
-file(GLOB SRC_LIST "*.c" "*.cpp" "protocol/*.cpp")
-add_library(helloJniLib SHARED ${SRC_LIST})
+#file(GLOB SRC_LIST "*.c" "*.cpp" "protocol/*.cpp")
+#add_library(helloJniLib SHARED ${SRC_LIST})
 ## 或者
 # file(GLOB SRC_LIST "*.cpp")
 # ile(GLOB SRC_PROTOCOL_LIST "protocol/*.cpp")

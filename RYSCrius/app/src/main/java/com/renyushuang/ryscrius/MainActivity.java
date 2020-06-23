@@ -16,5 +16,11 @@ public class MainActivity extends AppCompatActivity {
 
         TextView viewById = findViewById(R.id.hello_world);
         viewById.setText(new JniHelloWord().getNewString());
+
+        CallJavaMethodFromNativeCode callJavaMethodFromNativeCode = new CallJavaMethodFromNativeCode();
+        callJavaMethodFromNativeCode.nativeExecution();
+        callJavaMethodFromNativeCode.nativeStaticExcution();
+
+
     }
 }
