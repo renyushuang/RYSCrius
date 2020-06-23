@@ -16,6 +16,10 @@ add_library(helloJniLib SHARED
 add_library(NativeCodeCallJavaMethod SHARED
         com_renyushuang_ryscrius_CallJavaMethodFromNativeCode.c)
 
+
+add_library(NativeCGetJavaProperty SHARED
+        com_renyushuang_ryscrius_GetJavaPropertyFromNativeC.c)
+
 # 3.1.add_library 默认生成是静态库，通过以上命令生成文件名字，
 #
 # 在 Linux 下是：
