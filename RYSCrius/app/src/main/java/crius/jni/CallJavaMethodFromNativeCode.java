@@ -1,4 +1,4 @@
-package com.renyushuang.ryscrius;
+package crius.jni;
 
 import android.util.Log;
 

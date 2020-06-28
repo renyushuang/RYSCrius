@@ -3,9 +3,10 @@ package com.renyushuang.ryscrius;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.TextureView;
-import android.view.View;
 import android.widget.TextView;
+
+import crius.jni.CallJavaMethodFromNativeCode;
+import crius.jni.JniHelloWord;
 
 public class MainActivity extends AppCompatActivity {
 

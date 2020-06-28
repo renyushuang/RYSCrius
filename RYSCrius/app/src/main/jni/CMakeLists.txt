@@ -11,14 +11,14 @@ cmake_minimum_required(VERSION 3.4.1)
 
 ## 3.生成动态库
 add_library(helloJniLib SHARED
-        com_renyushuang_ryscrius_JniHelloWord.c)
+        jniexample/crius_jni_JniHelloWord.c)
 
 add_library(NativeCodeCallJavaMethod SHARED
-        com_renyushuang_ryscrius_CallJavaMethodFromNativeCode.c)
+        jniexample/crius_jni_CallJavaMethodFromNativeCode.c)
 
 
 add_library(NativeCGetJavaProperty SHARED
-        com_renyushuang_ryscrius_GetJavaPropertyFromNativeC.c)
+        jniexample/crius_jni_GetJavaPropertyFromNativeC.c)
 
 # 3.1.add_library 默认生成是静态库，通过以上命令生成文件名字，
 #

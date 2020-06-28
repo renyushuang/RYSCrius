@@ -3,7 +3,7 @@
 /* Header for class com_renyushuang_ryscrius_JniHelloWord */
 
 JNIEXPORT jstring JNICALL
-Java_com_renyushuang_ryscrius_JniHelloWord_getNewString
+Java_crius_jni_JniHelloWord_getNewString
         (JNIEnv *env, jobject thiz) {
     return (*env)->NewStringUTF(env, "hello word");
 }

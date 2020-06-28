@@ -8,11 +8,11 @@ jmethodID mJMethodID;
 jmethodID mJStaticMethodID;
 jfieldID mJFieldId;
 /*
- * Class:     com_renyushuang_ryscrius_GetJavaPropertyFromNativeC
+ * Class:     crius_jni_GetJavaPropertyFromNativeC
  * Method:    nativeInit
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_renyushuang_ryscrius_GetJavaPropertyFromNativeC_nativeInit
+JNIEXPORT void JNICALL Java_crius_jni_GetJavaPropertyFromNativeC_nativeInit
         (JNIEnv *env, jobject thiz) {
     jclass clazz = (*env)->GetObjectClass(env, thiz);
     mClass = (*env)->NewGlobalRef(env, clazz);
@@ -22,11 +22,11 @@ JNIEXPORT void JNICALL Java_com_renyushuang_ryscrius_GetJavaPropertyFromNativeC_
 }
 
 /*
- * Class:     com_renyushuang_ryscrius_GetJavaPropertyFromNativeC
+ * Class:     crius_jni_GetJavaPropertyFromNativeC
  * Method:    nativeBusiness
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_renyushuang_ryscrius_GetJavaPropertyFromNativeC_nativeBusiness
+JNIEXPORT void JNICALL Java_crius_jni_GetJavaPropertyFromNativeC_nativeBusiness
         (JNIEnv *env, jobject thiz) {
     // 获取java对象中的值
     int numberInJava = (*env)->GetIntField(env, mObject, mJFieldId);

@@ -1,4 +1,4 @@
-package com.renyushuang.ryscrius;
+package crius.jni;
 
 import android.content.Context;
 import android.icu.text.PluralRules;
